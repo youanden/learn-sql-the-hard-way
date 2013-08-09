@@ -1,4 +1,5 @@
-learn-sql-the-hard-way
-======================
+# Learn SQL the hard way - my progress
 
-My take on the wonderful course [here](http://sql.learncodethehardway.org/book/ex0.html)
+I'm just going to follow [this](http://sql.learncodethehardway.org/book/) brilliant guide, with a bit of changes for my own preferences.
+
+Why version control? I need practice. 
