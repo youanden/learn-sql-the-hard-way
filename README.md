@@ -6,4 +6,4 @@ Why version control? I need practice.
 
 ## Delete .DB Files in the dbs/ current directory
 
-./clear_dbs.sh
+Set DEBUG = True in run_sql.py

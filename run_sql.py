@@ -12,7 +12,7 @@ import os
 # Hold constant variables
 DBS_DIR = 'dbs/'
 SQL_DIR = 'sql/'
-DEBUG = True
+DEBUG = False
 
 def main():
   # Checks
