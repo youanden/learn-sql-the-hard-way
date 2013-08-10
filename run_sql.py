@@ -35,13 +35,17 @@ def processSqlFile( db_path, sql_file_path ):
     ' to '  +
     DBS_DIR + db_path )
 
-  qry = open( SQL_DIR + sql_file_path, 'r' ).read()
+  qry_file = open( SQL_DIR + sql_file_path, 'r' ).read()
   con = sqlite3.connect( DBS_DIR + db_path )
   c   = con.cursor()
-  try:
-    c.execute( qry )
-  except sqlite3.OperationalError:
-    print 'Check if db table exists, or for syntax errors'
+  queries = qry_file.split(';')
+
+  for query in queries:
+    try:
+      c.execute( query )
+    except sqlite3.OperationalError:
+      print 'Check if db table exists, or for syntax errors'
+
   con.commit()
   c.close()
   con.close()
