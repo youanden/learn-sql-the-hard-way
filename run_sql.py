@@ -44,7 +44,7 @@ def processSqlFile( db_path, sql_file_path ):
     try:
       c.execute( query )
     except sqlite3.OperationalError:
-      print 'Check if db table exists, or for syntax errors'
+      exit('Check if db table exists, or for syntax errors')
 
   con.commit()
   c.close()
